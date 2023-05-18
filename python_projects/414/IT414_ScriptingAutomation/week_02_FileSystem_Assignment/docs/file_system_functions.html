@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module file_system_functions</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">file_system_functions</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Ceric%20lovell%5Cdocuments%5Cit414_elovell%5Cit414_elovell%5Cweek_02_filesystem_assignment%5Cfunctions%5Cfile_system_functions.py">c:\users\eric lovell\documents\it414_elovell\it414_elovell\week_02_filesystem_assignment\functions\file_system_functions.py</a></td></tr></table>
+    <p><span class="code">#IT&nbsp;414&nbsp;-&nbsp;Eric&nbsp;Lovell&nbsp;-&nbsp;Function&nbsp;Library&nbsp;for&nbsp;main.py</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="os.html">os</a><br>
+</td><td class="multicolumn"><a href="platform.html">platform</a><br>
+</td><td class="multicolumn"><a href="shutil.html">shutil</a><br>
+</td><td class="multicolumn"><a href="time.html">time</a><br>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-copyFiles"><strong>copyFiles</strong></a>(passed_folder_to_copy, passed_copy_to_folder)</dt><dd><span class="code">Function&nbsp;that&nbsp;validates&nbsp;file&nbsp;paths&nbsp;and&nbsp;executes&nbsp;the&nbsp;<a href="#-executeFileCopy">executeFileCopy</a>()&nbsp;Function.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_folder_to_copy&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;consists&nbsp;of&nbsp;the&nbsp;file&nbsp;path&nbsp;for&nbsp;the&nbsp;folder&nbsp;to&nbsp;copy&nbsp;-&nbsp;without&nbsp;root&nbsp;path<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_copy_to_folder&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;consists&nbsp;of&nbsp;the&nbsp;file&nbsp;path&nbsp;for&nbsp;the&nbsp;folder&nbsp;to&nbsp;COPY&nbsp;TO&nbsp;-&nbsp;without&nbsp;root&nbsp;path<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Directly&nbsp;copies&nbsp;contents&nbsp;of&nbsp;one&nbsp;file&nbsp;into&nbsp;a&nbsp;new&nbsp;folder</span></dd></dl>
+ <dl><dt><a name="-createFolder"><strong>createFolder</strong></a>(passed_string)</dt><dd><span class="code">Function&nbsp;that&nbsp;validates&nbsp;file&nbsp;paths&nbsp;and&nbsp;executes&nbsp;the&nbsp;<a href="#-executeFileCopy">executeFileCopy</a>()&nbsp;Function.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_string&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;consists&nbsp;of&nbsp;the&nbsp;file&nbsp;path<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Creates&nbsp;a&nbsp;new&nbsp;directory&nbsp;in&nbsp;the&nbsp;File&nbsp;system</span></dd></dl>
+ <dl><dt><a name="-createLogFile"><strong>createLogFile</strong></a>(passed_destination_path)</dt><dd><span class="code">Function&nbsp;that&nbsp;creates&nbsp;a&nbsp;log&nbsp;file<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_destination_path&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;consists&nbsp;of&nbsp;the&nbsp;file&nbsp;path&nbsp;to&nbsp;the&nbsp;destination<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Creates&nbsp;file&nbsp;called&nbsp;log.txt&nbsp;and&nbsp;places&nbsp;it&nbsp;in&nbsp;the&nbsp;file&nbsp;system</span></dd></dl>
+ <dl><dt><a name="-executeFileCopy"><strong>executeFileCopy</strong></a>(passed_source_path, passed_destination_path)</dt><dd><span class="code">Function&nbsp;that&nbsp;performs&nbsp;the&nbsp;execution&nbsp;of&nbsp;copying&nbsp;files&nbsp;to&nbsp;new&nbsp;folder.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_source_path&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;consists&nbsp;of&nbsp;the&nbsp;file&nbsp;path&nbsp;for&nbsp;the&nbsp;folder&nbsp;to&nbsp;copy<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_destination_path&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;consists&nbsp;of&nbsp;the&nbsp;file&nbsp;path&nbsp;for&nbsp;the&nbsp;folder&nbsp;to&nbsp;COPY&nbsp;TO<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Directly&nbsp;copies&nbsp;contents&nbsp;of&nbsp;one&nbsp;file&nbsp;into&nbsp;a&nbsp;new&nbsp;folder</span></dd></dl>
+ <dl><dt><a name="-getPath"><strong>getPath</strong></a>(passed_folder)</dt><dd><span class="code">Function&nbsp;that&nbsp;generates&nbsp;determines&nbsp;the&nbsp;os&nbsp;type&nbsp;and&nbsp;comebines&nbsp;the&nbsp;proper&nbsp;root&nbsp;path&nbsp;with&nbsp;the&nbsp;rest&nbsp;of&nbsp;the&nbsp;path<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_folder&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;file&nbsp;path&nbsp;without&nbsp;the&nbsp;root&nbsp;portion<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;final_filepath&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;the&nbsp;absolute&nbsp;file&nbsp;path</span></dd></dl>
+ <dl><dt><a name="-validateFileSize"><strong>validateFileSize</strong></a>(passed_source_path, passed_file_item)</dt><dd><span class="code">Function&nbsp;that&nbsp;validates&nbsp;the&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_source_path&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;consists&nbsp;of&nbsp;the&nbsp;file&nbsp;path&nbsp;for&nbsp;the&nbsp;folder&nbsp;to&nbsp;copy<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_file_item&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;containing&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;file&nbsp;for&nbsp;size&nbsp;inspection<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;If&nbsp;the&nbsp;file&nbsp;is&nbsp;too&nbsp;large&nbsp;||&nbsp;False&nbsp;--&nbsp;IF&nbsp;the&nbsp;file&nbsp;size&nbsp;is&nbsp;valid</span></dd></dl>
+ <dl><dt><a name="-writeToLog"><strong>writeToLog</strong></a>(passed_string, passed_destination_path)</dt><dd><span class="code">Function&nbsp;that&nbsp;creates&nbsp;a&nbsp;log&nbsp;file<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_string&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;consists&nbsp;of&nbsp;the&nbsp;string&nbsp;to&nbsp;write&nbsp;to&nbsp;the&nbsp;log&nbsp;file<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_destination_path&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;consists&nbsp;of&nbsp;the&nbsp;file&nbsp;path&nbsp;to&nbsp;the&nbsp;destination<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Creates&nbsp;file&nbsp;called&nbsp;log.txt&nbsp;and&nbsp;places&nbsp;it&nbsp;in&nbsp;the&nbsp;file&nbsp;system</span></dd></dl>
+</td></tr></table>
+</body></html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module reformat</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">reformat</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Ceric%20lovell%5Cdocuments%5Cit412_elovell%5Cit412_elo088%5Cfinal_project%5Cclasses%5Creformat.py">c:\users\eric lovell\documents\it412_elovell\it412_elo088\final_project\classes\reformat.py</a></td></tr></table>
+    <p><span class="code">#IT&nbsp;412&nbsp;-&nbsp;Eric&nbsp;Lovell&nbsp;-&nbsp;Final&nbsp;Project&nbsp;<a href="#Reformat">Reformat</a>&nbsp;Class</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="json.html">json</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="reformat.html#Reformat">Reformat</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Reformat">class <strong>Reformat</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Class&nbsp;that&nbsp;holds&nbsp;methods&nbsp;to&nbsp;reformat&nbsp;a&nbsp;file&nbsp;into&nbsp;json&nbsp;and&nbsp;csv&nbsp;format<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Reformat-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Constructor&nbsp;for&nbsp;<a href="#Reformat">Reformat</a>&nbsp;Class</span></dd></dl>
+
+<dl><dt><a name="Reformat-customerJSON"><strong>customerJSON</strong></a>(self, passed_customer)</dt><dd><span class="code">File&nbsp;that&nbsp;appends&nbsp;a&nbsp;dictionary&nbsp;item&nbsp;to&nbsp;a&nbsp;JSON&nbsp;File</span></dd></dl>
+
+<dl><dt><a name="Reformat-dataForCSV"><strong>dataForCSV</strong></a>(self, passed_file)</dt><dd><span class="code">Method&nbsp;that&nbsp;reformats&nbsp;data&nbsp;from&nbsp;a&nbsp;text&nbsp;file&nbsp;to&nbsp;data&nbsp;that&nbsp;can&nbsp;be&nbsp;input&nbsp;into&nbsp;a&nbsp;CSV&nbsp;File<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_file&nbsp;{Text&nbsp;File}&nbsp;--&nbsp;Text&nbsp;file&nbsp;that&nbsp;contains&nbsp;information&nbsp;to&nbsp;be&nbsp;reformatted&nbsp;into&nbsp;a&nbsp;CSV&nbsp;File<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data_for_file&nbsp;{Comma&nbsp;Separated&nbsp;Values}&nbsp;--&nbsp;Variable&nbsp;containing&nbsp;reformatted&nbsp;values</span></dd></dl>
+
+<dl><dt><a name="Reformat-dataForJSON"><strong>dataForJSON</strong></a>(self, passed_file)</dt><dd><span class="code">Method&nbsp;that&nbsp;reformats&nbsp;data&nbsp;from&nbsp;a&nbsp;text&nbsp;file&nbsp;to&nbsp;data&nbsp;that&nbsp;can&nbsp;be&nbsp;input&nbsp;into&nbsp;a&nbsp;JSON&nbsp;File<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_file&nbsp;{Text&nbsp;File}&nbsp;--&nbsp;Text&nbsp;file&nbsp;that&nbsp;contains&nbsp;information&nbsp;to&nbsp;be&nbsp;reformatted&nbsp;into&nbsp;a&nbsp;JSON&nbsp;File<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data_for_file&nbsp;{Dictionary&nbsp;Object}&nbsp;--&nbsp;Variable&nbsp;containing&nbsp;reformatted&nbsp;values&nbsp;in&nbsp;dictionary&nbsp;format</span></dd></dl>
+
+<dl><dt><a name="Reformat-reformatCSV"><strong>reformatCSV</strong></a>(self, passed_file, passed_data)</dt><dd><span class="code">Method&nbsp;that&nbsp;writes&nbsp;reformatted&nbsp;CSV&nbsp;data&nbsp;into&nbsp;a&nbsp;CSV&nbsp;File<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_file&nbsp;{New&nbsp;CSV&nbsp;File}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;path&nbsp;the&nbsp;new&nbsp;csv&nbsp;file&nbsp;location<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_data&nbsp;{Comma&nbsp;Separated&nbsp;Values}&nbsp;--&nbsp;Variable&nbsp;containing&nbsp;reformatted&nbsp;comma&nbsp;separated&nbsp;values<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Takes&nbsp;new&nbsp;data&nbsp;and&nbsp;directly&nbsp;writes&nbsp;it&nbsp;to&nbsp;new&nbsp;file</span></dd></dl>
+
+<dl><dt><a name="Reformat-reformatJSON"><strong>reformatJSON</strong></a>(self, passed_file, passed_data)</dt><dd><span class="code">Method&nbsp;that&nbsp;writes&nbsp;reformatted&nbsp;JSON&nbsp;data&nbsp;into&nbsp;a&nbsp;JSON&nbsp;File<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_file&nbsp;{New&nbsp;JSON&nbsp;File}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;path&nbsp;the&nbsp;new&nbsp;JSON&nbsp;file&nbsp;location<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_data&nbsp;{Dictionary&nbsp;Obejct}&nbsp;--&nbsp;Variable&nbsp;containing&nbsp;reformatted&nbsp;values&nbsp;in&nbsp;dictionary&nbsp;format<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Takes&nbsp;new&nbsp;data&nbsp;and&nbsp;directly&nbsp;writes&nbsp;it&nbsp;to&nbsp;new&nbsp;file</span></dd></dl>
+
+<dl><dt><a name="Reformat-removeCharacters"><strong>removeCharacters</strong></a>(self, passed_list)</dt><dd><span class="code">Method&nbsp;that&nbsp;removes&nbsp;character&nbsp;from&nbsp;text&nbsp;file<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_list&nbsp;{List&nbsp;Object}&nbsp;--&nbsp;List&nbsp;Object&nbsp;containing&nbsp;customer&nbsp;values<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ret_list&nbsp;{List&nbsp;Object}&nbsp;--&nbsp;List&nbsp;Object&nbsp;containings&nbsp;new&nbsp;customer&nbsp;values,&nbsp;removing&nbsp;duplicates&nbsp;and&nbsp;unncessary&nbsp;columns</span></dd></dl>
+
+<dl><dt><a name="Reformat-removeJSON"><strong>removeJSON</strong></a>(self, passed_file, passed_id)</dt><dd><span class="code">Method&nbsp;at&nbsp;modifies&nbsp;customers.json<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Returns:</span></dd></dl>
+
+<dl><dt><a name="Reformat-updateJson"><strong>updateJson</strong></a>(self, passed_id)</dt><dd><span class="code">Method&nbsp;that&nbsp;updates&nbsp;the&nbsp;customer.json&nbsp;after&nbsp;an&nbsp;entry&nbsp;has&nbsp;been&nbsp;modified<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Returns:</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>connect</strong> = &lt;classes.database_access.DB_Connect object&gt;<br>
+<strong>setup</strong> = &lt;classes.setup.Setup object&gt;</td></tr></table>
+</body></html>

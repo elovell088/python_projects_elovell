@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module validator</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">validator</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Ceric%20lovell%5Cdocuments%5Cit412_elovell%5Cit412_elo088%5Cfinal_project%5Cclasses%5Cvalidator.py">c:\users\eric lovell\documents\it412_elovell\it412_elo088\final_project\classes\validator.py</a></td></tr></table>
+    <p><span class="code">#IT&nbsp;412&nbsp;-&nbsp;Eric&nbsp;Lovell&nbsp;-&nbsp;Final&nbsp;Project&nbsp;<a href="#Validator">Validator</a>&nbsp;Class</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="re.html">re</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="validator.html#Validator">Validator</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Validator">class <strong>Validator</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Class&nbsp;that&nbsp;holds&nbsp;methods&nbsp;to&nbsp;validate&nbsp;input<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Validator-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Constructor&nbsp;for&nbsp;the&nbsp;<a href="#Validator">Validator</a>&nbsp;Class</span></dd></dl>
+
+<dl><dt><a name="Validator-validateCity"><strong>validateCity</strong></a>(self, passed_city)</dt><dd><span class="code">Method&nbsp;for&nbsp;validating&nbsp;user&nbsp;input&nbsp;for&nbsp;the&nbsp;city<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_city&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;city&nbsp;portion&nbsp;of&nbsp;address&nbsp;information<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;if&nbsp;validation&nbsp;passes&nbsp;|&nbsp;False&nbsp;--&nbsp;if&nbsp;validation&nbsp;fails</span></dd></dl>
+
+<dl><dt><a name="Validator-validateCompanyName"><strong>validateCompanyName</strong></a>(self, passed_company)</dt><dd><span class="code">Method&nbsp;for&nbsp;validating&nbsp;user&nbsp;input&nbsp;for&nbsp;the&nbsp;company&nbsp;name<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_make&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;vehicle&nbsp;make&nbsp;information&nbsp;*Letters&nbsp;Only*<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;if&nbsp;validation&nbsp;passes&nbsp;|&nbsp;False&nbsp;--&nbsp;if&nbsp;validation&nbsp;fails</span></dd></dl>
+
+<dl><dt><a name="Validator-validateEmail"><strong>validateEmail</strong></a>(self, passed_email)</dt><dd><span class="code">Method&nbsp;for&nbsp;validating&nbsp;user&nbsp;input&nbsp;for&nbsp;the&nbsp;email&nbsp;address<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_email&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;email&nbsp;address&nbsp;information&nbsp;information<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;if&nbsp;validation&nbsp;passes&nbsp;|&nbsp;False&nbsp;--&nbsp;if&nbsp;validation&nbsp;fails</span></dd></dl>
+
+<dl><dt><a name="Validator-validateName"><strong>validateName</strong></a>(self, passed_name)</dt><dd><span class="code">Method&nbsp;for&nbsp;validating&nbsp;user&nbsp;input&nbsp;for&nbsp;the&nbsp;first&nbsp;and&nbsp;last&nbsp;name&nbsp;of&nbsp;the&nbsp;person&nbsp;that&nbsp;sold&nbsp;the&nbsp;vehicle<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_name&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;name&nbsp;of&nbsp;person&nbsp;who&nbsp;sold&nbsp;the&nbsp;vehicle&nbsp;*Letters&nbsp;and&nbsp;Numbers&nbsp;Only*<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;if&nbsp;validation&nbsp;passes&nbsp;|&nbsp;False&nbsp;--&nbsp;if&nbsp;validation&nbsp;fails</span></dd></dl>
+
+<dl><dt><a name="Validator-validatePhoneNumber"><strong>validatePhoneNumber</strong></a>(self, passed_phone)</dt><dd><span class="code">Method&nbsp;for&nbsp;validating&nbsp;user&nbsp;input&nbsp;for&nbsp;the&nbsp;make&nbsp;of&nbsp;a&nbsp;vehicle<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_model&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;street&nbsp;address&nbsp;information&nbsp;information<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;if&nbsp;validation&nbsp;passes&nbsp;|&nbsp;False&nbsp;--&nbsp;if&nbsp;validation&nbsp;fails</span></dd></dl>
+
+<dl><dt><a name="Validator-validateState"><strong>validateState</strong></a>(self, passed_state)</dt><dd><span class="code">Method&nbsp;for&nbsp;validating&nbsp;user&nbsp;input&nbsp;for&nbsp;the&nbsp;state<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_state&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;state&nbsp;information&nbsp;information<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;if&nbsp;validation&nbsp;passes&nbsp;|&nbsp;False&nbsp;--&nbsp;if&nbsp;validation&nbsp;fails</span></dd></dl>
+
+<dl><dt><a name="Validator-validateStreetAddress"><strong>validateStreetAddress</strong></a>(self, passed_street)</dt><dd><span class="code">Method&nbsp;for&nbsp;validating&nbsp;user&nbsp;input&nbsp;for&nbsp;the&nbsp;make&nbsp;of&nbsp;a&nbsp;vehicle<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_model&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;street&nbsp;address&nbsp;information&nbsp;information<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;if&nbsp;validation&nbsp;passes&nbsp;|&nbsp;False&nbsp;--&nbsp;if&nbsp;validation&nbsp;fails</span></dd></dl>
+
+<dl><dt><a name="Validator-validateZip"><strong>validateZip</strong></a>(self, passed_zip)</dt><dd><span class="code">Method&nbsp;for&nbsp;validating&nbsp;user&nbsp;input&nbsp;for&nbsp;the&nbsp;make&nbsp;of&nbsp;a&nbsp;vehicle<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_make&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;vehicle&nbsp;make&nbsp;information&nbsp;*Letters&nbsp;Only*<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;if&nbsp;validation&nbsp;passes&nbsp;|&nbsp;False&nbsp;--&nbsp;if&nbsp;validation&nbsp;fails</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module event</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">event</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Ceric%20lovell%5Cdocuments%5Cit412_elovell%5Cit412_elo088%5Cweek_04_testing_code_assignment%5Cclasses%5Cevent.py">c:\users\eric lovell\documents\it412_elovell\it412_elo088\week_04_testing_code_assignment\classes\event.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="re.html">re</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="event.html#Event">Event</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Event">class <strong>Event</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Event">Event</a>(name='',&nbsp;date='',&nbsp;time='',&nbsp;type='')<br>
+&nbsp;<br>
+Virtual&nbsp;representation&nbsp;for&nbsp;an&nbsp;event<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Event-__init__"><strong>__init__</strong></a>(self, name='', date='', time='', type='')</dt><dd><span class="code">Constructor&nbsp;for&nbsp;the&nbsp;<a href="#Event">Event</a>&nbsp;Class</span></dd></dl>
+
+<dl><dt><a name="Event-date_validator"><strong>date_validator</strong></a>(self, passed_date)</dt><dd><span class="code">Method&nbsp;that&nbsp;validates&nbsp;date&nbsp;attribute&nbsp;is&nbsp;number&nbsp;and&nbsp;'-'&nbsp;only<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_date&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;contains&nbsp;date&nbsp;information<br>
+Return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;if&nbsp;date&nbsp;is&nbsp;in&nbsp;correct&nbsp;format&nbsp;|&nbsp;False&nbsp;--&nbsp;if&nbsp;date&nbsp;is&nbsp;incorrect&nbsp;format</span></dd></dl>
+
+<dl><dt><a name="Event-get_date"><strong>get_date</strong></a>(self, passed_date)</dt><dd><span class="code">Method&nbsp;that&nbsp;gathers&nbsp;and&nbsp;validates&nbsp;the&nbsp;event&nbsp;date<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_date&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;consisting&nbsp;of&nbsp;date&nbsp;information<br>
+Return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ret_date&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;has&nbsp;been&nbsp;validated&nbsp;to&nbsp;be&nbsp;in&nbsp;correct&nbsp;format</span></dd></dl>
+
+<dl><dt><a name="Event-get_name"><strong>get_name</strong></a>(self, passed_name)</dt><dd><span class="code">Method&nbsp;that&nbsp;gathers&nbsp;and&nbsp;validates&nbsp;name&nbsp;information<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_name&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;event&nbsp;name&nbsp;information<br>
+Return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ret_name&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;has&nbsp;been&nbsp;validated&nbsp;to&nbsp;be&nbsp;in&nbsp;proper&nbsp;format</span></dd></dl>
+
+<dl><dt><a name="Event-get_time"><strong>get_time</strong></a>(self, passed_time)</dt><dd><span class="code">Method&nbsp;that&nbsp;gathers&nbsp;and&nbsp;validates&nbsp;the&nbsp;event&nbsp;time<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_time&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;event&nbsp;time&nbsp;information<br>
+Return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ret_time&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;has&nbsp;been&nbsp;validated&nbsp;to&nbsp;be&nbsp;in&nbsp;proper&nbsp;format</span></dd></dl>
+
+<dl><dt><a name="Event-get_type"><strong>get_type</strong></a>(self, passed_type)</dt><dd><span class="code">Method&nbsp;that&nbsp;gathers&nbsp;and&nbsp;validates&nbsp;the&nbsp;event&nbsp;type<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_type&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;event&nbsp;type&nbsp;information<br>
+Return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ret_type&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;contains&nbsp;validated&nbsp;event&nbsp;type</span></dd></dl>
+
+<dl><dt><a name="Event-name_validator"><strong>name_validator</strong></a>(self, passed_name)</dt><dd><span class="code">Method&nbsp;that&nbsp;validates&nbsp;event&nbsp;name&nbsp;value&nbsp;is&nbsp;letters&nbsp;only<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_name&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;contains&nbsp;event&nbsp;name&nbsp;information<br>
+Return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;if&nbsp;name&nbsp;is&nbsp;in&nbsp;correct&nbsp;format&nbsp;|&nbsp;False&nbsp;--&nbsp;if&nbsp;name&nbsp;is&nbsp;incorrect&nbsp;format</span></dd></dl>
+
+<dl><dt><a name="Event-time_validator"><strong>time_validator</strong></a>(self, passed_time)</dt><dd><span class="code">Method&nbsp;that&nbsp;validates&nbsp;time&nbsp;attribute&nbsp;is&nbsp;number&nbsp;and&nbsp;':'&nbsp;only<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_time&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;contains&nbsp;time&nbsp;information<br>
+Return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;if&nbsp;time&nbsp;is&nbsp;in&nbsp;correct&nbsp;format&nbsp;|&nbsp;False&nbsp;--&nbsp;if&nbsp;time&nbsp;is&nbsp;incorrect&nbsp;format</span></dd></dl>
+
+<dl><dt><a name="Event-type_validator"><strong>type_validator</strong></a>(self, passed_type)</dt><dd><span class="code">Method&nbsp;that&nbsp;validates&nbsp;type&nbsp;attribute&nbsp;is&nbsp;s,&nbsp;r,&nbsp;or&nbsp;f.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_type&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;contains&nbsp;type&nbsp;information<br>
+Return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;if&nbsp;type&nbsp;is&nbsp;in&nbsp;correct&nbsp;character&nbsp;|&nbsp;False&nbsp;--&nbsp;if&nbsp;type&nbsp;is&nbsp;incorrect&nbsp;character</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

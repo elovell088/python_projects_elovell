@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module mailing_database</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">mailing_database</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Ceric%20lovell%5Cdocuments%5Cit412_elovell%5Cit412_elo088%5Cfinal_project%5Cclasses%5Cmailing_database.py">c:\users\eric lovell\documents\it412_elovell\it412_elo088\final_project\classes\mailing_database.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="json.html">json</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="mailing_database.html#mailingDatabase">mailingDatabase</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="mailingDatabase">class <strong>mailingDatabase</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Virtual&nbsp;representation&nbsp;of&nbsp;CRM&nbsp;database<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="mailingDatabase-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Constructor&nbsp;for&nbsp;the&nbsp;crmDatabase&nbsp;class</span></dd></dl>
+
+<dl><dt><a name="mailingDatabase-displayMailing"><strong>displayMailing</strong></a>(self, passed_id)</dt><dd><span class="code">Displays&nbsp;an&nbsp;individual&nbsp;customers&nbsp;information&nbsp;from&nbsp;Mailing&nbsp;Database<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_id&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;mail&nbsp;id&nbsp;information<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Directly&nbsp;prints&nbsp;customer&nbsp;information&nbsp;from&nbsp;Mailing&nbsp;Database</span></dd></dl>
+
+<dl><dt><a name="mailingDatabase-generateInsertMailQuery"><strong>generateInsertMailQuery</strong></a>(self, passed_customer)</dt><dd><span class="code">Method&nbsp;that&nbsp;generates&nbsp;an&nbsp;insert&nbsp;query&nbsp;for&nbsp;Mailing&nbsp;Database<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_customer&nbsp;{Customer&nbsp;Object}&nbsp;--&nbsp;Instance&nbsp;of&nbsp;customer&nbsp;class<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ret_query_string&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;constaing&nbsp;insert&nbsp;query&nbsp;statement&nbsp;for&nbsp;the&nbsp;Mailing&nbsp;Database</span></dd></dl>
+
+<dl><dt><a name="mailingDatabase-generateUpdateMailQuery"><strong>generateUpdateMailQuery</strong></a>(self)</dt><dd><span class="code">Method&nbsp;that&nbsp;generates&nbsp;and&nbsp;executes&nbsp;an&nbsp;update&nbsp;query&nbsp;for&nbsp;Mailing&nbsp;Database<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;collects&nbsp;input&nbsp;from&nbsp;user&nbsp;and&nbsp;sends&nbsp;it&nbsp;to&nbsp;the&nbsp;specified&nbsp;update&nbsp;method<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Updates&nbsp;new&nbsp;values&nbsp;within&nbsp;the&nbsp;database&nbsp;and&nbsp;displays&nbsp;them&nbsp;to&nbsp;user</span></dd></dl>
+
+<dl><dt><a name="mailingDatabase-getMailID"><strong>getMailID</strong></a>(self, passed_id)</dt><dd><span class="code">Method&nbsp;that&nbsp;finds&nbsp;and&nbsp;returns&nbsp;the&nbsp;mail&nbsp;ID&nbsp;of&nbsp;the&nbsp;customer&nbsp;when&nbsp;only&nbsp;the&nbsp;crm_id&nbsp;is&nbsp;known<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_id&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;ID&nbsp;information<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ret_mail_id&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;Mail&nbsp;ID</span></dd></dl>
+
+<dl><dt><a name="mailingDatabase-getMailingDatabase"><strong>getMailingDatabase</strong></a>(self)</dt><dd><span class="code">Method&nbsp;that&nbsp;displays&nbsp;all&nbsp;entries&nbsp;within&nbsp;the&nbsp;database&nbsp;in&nbsp;a&nbsp;clean&nbsp;format<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Information&nbsp;is&nbsp;collected&nbsp;from&nbsp;a&nbsp;select&nbsp;query<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;output_string&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;variable&nbsp;containing&nbsp;information&nbsp;within&nbsp;the&nbsp;CRM&nbsp;database</span></dd></dl>
+
+<dl><dt><a name="mailingDatabase-get_crm_id"><strong>get_crm_id</strong></a>(self, passed_id)</dt><dd><span class="code">Method&nbsp;that&nbsp;finds&nbsp;and&nbsp;returns&nbsp;the&nbsp;mail&nbsp;ID&nbsp;of&nbsp;the&nbsp;customer&nbsp;when&nbsp;only&nbsp;the&nbsp;mail_id&nbsp;is&nbsp;known<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_id&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;ID&nbsp;information<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ret_crm_id&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;Mail&nbsp;ID</span></dd></dl>
+
+<dl><dt><a name="mailingDatabase-updateAddress"><strong>updateAddress</strong></a>(self, passed_id)</dt><dd><span class="code">Method&nbsp;that&nbsp;updates&nbsp;the&nbsp;address&nbsp;of&nbsp;a&nbsp;customer&nbsp;in&nbsp;both&nbsp;databases<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_id&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;holds&nbsp;a&nbsp;passed&nbsp;Mail&nbsp;ID<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Directly&nbsp;updates&nbsp;value&nbsp;in&nbsp;the&nbsp;database,&nbsp;then&nbsp;displays&nbsp;changed&nbsp;values</span></dd></dl>
+
+<dl><dt><a name="mailingDatabase-updateCompany"><strong>updateCompany</strong></a>(self, passed_id)</dt><dd><span class="code">Method&nbsp;that&nbsp;updates&nbsp;the&nbsp;company&nbsp;of&nbsp;a&nbsp;customer&nbsp;in&nbsp;both&nbsp;databases<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_id&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;holds&nbsp;a&nbsp;passed&nbsp;Mail&nbsp;ID<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Directly&nbsp;updates&nbsp;value&nbsp;in&nbsp;the&nbsp;database,&nbsp;then&nbsp;displays&nbsp;changed&nbsp;values</span></dd></dl>
+
+<dl><dt><a name="mailingDatabase-updateFullName"><strong>updateFullName</strong></a>(self, passed_id)</dt><dd><span class="code">Method&nbsp;that&nbsp;updates&nbsp;the&nbsp;full&nbsp;name&nbsp;of&nbsp;a&nbsp;customer&nbsp;in&nbsp;both&nbsp;databases<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_id&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;holds&nbsp;a&nbsp;passed&nbsp;Mail&nbsp;ID<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Directly&nbsp;updates&nbsp;value&nbsp;in&nbsp;the&nbsp;database,&nbsp;then&nbsp;displays&nbsp;changed&nbsp;values</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>connect_to_database</strong> = &lt;classes.database_access.DB_Connect object&gt;<br>
+<strong>setup</strong> = &lt;classes.setup.Setup object&gt;<br>
+<strong>user_input</strong> = &lt;classes.inputs.Inputs object&gt;</td></tr></table>
+</body></html>

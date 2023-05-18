@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module files_exceptions_functions</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">files_exceptions_functions</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Ceric%20lovell%5Cdocuments%5Cit412_elovell%5Cit412_elo088%5Cweek_02_files_exceptions_assignment%5Cfunctions%5Cfiles_exceptions_functions.py">c:\users\eric lovell\documents\it412_elovell\it412_elo088\week_02_files_exceptions_assignment\functions\files_exceptions_functions.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="json.html">json</a><br>
+</td><td class="multicolumn"><a href="os.html">os</a><br>
+</td><td class="multicolumn"><a href="time.html">time</a><br>
+</td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-add_data"><strong>add_data</strong></a>(passed_data)</dt><dd><span class="code">Function&nbsp;that&nbsp;prompts&nbsp;user&nbsp;for&nbsp;new&nbsp;values&nbsp;and&nbsp;adds&nbsp;them&nbsp;to&nbsp;a&nbsp;JSON&nbsp;configuration&nbsp;object<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_data&nbsp;{Dictionary&nbsp;Item}&nbsp;--&nbsp;Dictionary&nbsp;object&nbsp;containing&nbsp;current&nbsp;configurations&nbsp;loaded&nbsp;from&nbsp;JSON&nbsp;file<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_data&nbsp;{Dictionary&nbsp;Item}&nbsp;--&nbsp;Dictionary&nbsp;object&nbsp;containing&nbsp;updated&nbsp;configurations&nbsp;with&nbsp;added&nbsp;values</span></dd></dl>
+ <dl><dt><a name="-backup_data"><strong>backup_data</strong></a>(backup_data, backup_file)</dt><dd><span class="code">Function&nbsp;that&nbsp;back&nbsp;ups&nbsp;the&nbsp;previous&nbsp;JSON&nbsp;configurations&nbsp;to&nbsp;a&nbsp;backup&nbsp;file<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;backup_data&nbsp;{Dictionary&nbsp;Item}&nbsp;--&nbsp;Dictionary&nbsp;object&nbsp;containing&nbsp;configurations&nbsp;from&nbsp;JSON&nbsp;file<br>
+&nbsp;&nbsp;&nbsp;&nbsp;backup_file&nbsp;{File&nbsp;Path}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;path&nbsp;to&nbsp;backup_file&nbsp;location<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Saves&nbsp;contents&nbsp;to&nbsp;new&nbsp;backup&nbsp;file&nbsp;and&nbsp;prints&nbsp;message&nbsp;that&nbsp;configurations&nbsp;were&nbsp;saved</span></dd></dl>
+ <dl><dt><a name="-change_configs"><strong>change_configs</strong></a>(config_data)</dt><dd><span class="code">Function&nbsp;that&nbsp;updates&nbsp;the&nbsp;configuration&nbsp;data&nbsp;object&nbsp;with&nbsp;proper/newest&nbsp;data<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config_data&nbsp;{Dictionary&nbsp;Item}&nbsp;--&nbsp;Dictionary&nbsp;object&nbsp;containing&nbsp;data&nbsp;loaded&nbsp;from&nbsp;JSON&nbsp;file&nbsp;with&nbsp;new&nbsp;data<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;new_config&nbsp;{Dictionary&nbsp;Item}&nbsp;--&nbsp;Dictionary&nbsp;object&nbsp;containing&nbsp;data&nbsp;from&nbsp;config_data&nbsp;argument</span></dd></dl>
+ <dl><dt><a name="-check_file"><strong>check_file</strong></a>(passed_original_file, passed_modified_file)</dt><dd><span class="code">Function&nbsp;that&nbsp;determines&nbsp;the&nbsp;current&nbsp;json&nbsp;file&nbsp;being&nbsp;loaded&nbsp;into&nbsp;the&nbsp;program<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_original_file&nbsp;{File&nbsp;Path}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;contains&nbsp;path&nbsp;to&nbsp;basic_configs&nbsp;file<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_modified_value&nbsp;{File&nbsp;Path}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;contains&nbsp;path&nbsp;to&nbsp;override_configs&nbsp;file<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;current_file&nbsp;{File&nbsp;Path}&nbsp;--&nbsp;String&nbsp;value&nbsp;for&nbsp;path&nbsp;of&nbsp;the&nbsp;current&nbsp;file&nbsp;the&nbsp;program&nbsp;should&nbsp;work&nbsp;with</span></dd></dl>
+ <dl><dt><a name="-display_data"><strong>display_data</strong></a>(passed_data)</dt><dd><span class="code">Function&nbsp;to&nbsp;display&nbsp;data&nbsp;within&nbsp;a&nbsp;json&nbsp;file<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_data&nbsp;{Dictionary&nbsp;Item}&nbsp;--&nbsp;Dictionary&nbsp;object&nbsp;containing&nbsp;items&nbsp;for&nbsp;display&nbsp;output<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;output_string&nbsp;{String&nbsp;Values}&nbsp;-&nbsp;String&nbsp;value&nbsp;containing&nbsp;clean&nbsp;output&nbsp;from&nbsp;data&nbsp;within&nbsp;passed_data&nbsp;argument</span></dd></dl>
+ <dl><dt><a name="-load_data"><strong>load_data</strong></a>(passed_file)</dt><dd><span class="code">Function&nbsp;that&nbsp;loads&nbsp;the&nbsp;contents&nbsp;of&nbsp;a&nbsp;file<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_file&nbsp;{File&nbsp;Path}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;contains&nbsp;path&nbsp;to&nbsp;the&nbsp;file&nbsp;for&nbsp;loading<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config_data&nbsp;{Dictionary&nbsp;Item}&nbsp;--&nbsp;Dictionary&nbsp;object&nbsp;containing&nbsp;configurations&nbsp;loaded&nbsp;from&nbsp;JSON&nbsp;file<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;If&nbsp;file&nbsp;doesn't&nbsp;exist,&nbsp;it&nbsp;is&nbsp;caught&nbsp;in&nbsp;'except'&nbsp;and&nbsp;prints&nbsp;message&nbsp;stating&nbsp;it&nbsp;doesn't&nbsp;exist</span></dd></dl>
+ <dl><dt><a name="-modify_data"><strong>modify_data</strong></a>(passed_data)</dt><dd><span class="code">Function&nbsp;that&nbsp;prompts&nbsp;user&nbsp;for&nbsp;values&nbsp;to&nbsp;modify&nbsp;from&nbsp;the&nbsp;content&nbsp;within&nbsp;JSON&nbsp;configuration&nbsp;object<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_data&nbsp;{Dictionary&nbsp;Item}&nbsp;--&nbsp;Dictionary&nbsp;object&nbsp;containing&nbsp;current&nbsp;configurations&nbsp;loaded&nbsp;from&nbsp;JSON&nbsp;file<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_data&nbsp;{Dictionary&nbsp;Item}&nbsp;--&nbsp;Dictionary&nbsp;object&nbsp;containing&nbsp;updated&nbsp;configurations&nbsp;with&nbsp;modified&nbsp;values</span></dd></dl>
+ <dl><dt><a name="-program_prompts"><strong>program_prompts</strong></a>()</dt><dd><span class="code">Function&nbsp;that&nbsp;provides&nbsp;prompts&nbsp;to&nbsp;the&nbsp;user&nbsp;with&nbsp;clean&nbsp;output<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Directly&nbsp;prints&nbsp;prompt&nbsp;with&nbsp;clean&nbsp;output</span></dd></dl>
+ <dl><dt><a name="-remove_data"><strong>remove_data</strong></a>(passed_data)</dt><dd><span class="code">Function&nbsp;that&nbsp;removes&nbsp;key/pair&nbsp;values&nbsp;from&nbsp;JSON&nbsp;configurations<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_data&nbsp;{Dictionary&nbsp;Item}&nbsp;--&nbsp;Dictionary&nbsp;object&nbsp;containing&nbsp;current&nbsp;configurations&nbsp;loaded&nbsp;from&nbsp;JSON&nbsp;file<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_data&nbsp;{Dictionary&nbsp;Item}&nbsp;--&nbsp;Dictionary&nbsp;object&nbsp;containing&nbsp;updated&nbsp;configurations&nbsp;with&nbsp;removed&nbsp;values</span></dd></dl>
+ <dl><dt><a name="-save_data"><strong>save_data</strong></a>(new_data, new_file)</dt><dd><span class="code">Function&nbsp;that&nbsp;saves&nbsp;the&nbsp;newest&nbsp;JSON&nbsp;configurations&nbsp;to&nbsp;config_override&nbsp;file<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;new_data&nbsp;{Dictionary&nbsp;Item}&nbsp;--&nbsp;Dictionary&nbsp;object&nbsp;containing&nbsp;configurations&nbsp;from&nbsp;JSON&nbsp;file<br>
+&nbsp;&nbsp;&nbsp;&nbsp;new_file&nbsp;{File&nbsp;Path}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;path&nbsp;to&nbsp;backup_file&nbsp;location<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Overwrites&nbsp;contents&nbsp;within&nbsp;new_file,&nbsp;saves&nbsp;file,&nbsp;and&nbsp;prints&nbsp;message&nbsp;that&nbsp;configurations&nbsp;were&nbsp;saved</span></dd></dl>
+ <dl><dt><a name="-startup_display"><strong>startup_display</strong></a>(passed_file)</dt><dd><span class="code">Function&nbsp;at&nbsp;start&nbsp;up&nbsp;that&nbsp;loads&nbsp;data&nbsp;from&nbsp;a&nbsp;JSON&nbsp;file&nbsp;and&nbsp;displays&nbsp;clean&nbsp;content<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_file&nbsp;{File&nbsp;Path}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;contains&nbsp;path&nbsp;for&nbsp;the&nbsp;file&nbsp;to&nbsp;work&nbsp;with<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;-&nbsp;Directly&nbsp;prints&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;current&nbsp;file&nbsp;with&nbsp;clean&nbsp;output</span></dd></dl>
+ <dl><dt><a name="-validate_data"><strong>validate_data</strong></a>(passed_value, passed_type, passed_data)</dt><dd><span class="code">Function&nbsp;that&nbsp;validates&nbsp;input&nbsp;information&nbsp;from&nbsp;user&nbsp;regarding&nbsp;the&nbsp;removal&nbsp;of&nbsp;values<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_value&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;is&nbsp;to&nbsp;be&nbsp;validated<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_type&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;indicating&nbsp;the&nbsp;type&nbsp;of&nbsp;validation&nbsp;to&nbsp;execute<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_data&nbsp;{Dictionary&nbsp;Item}&nbsp;--&nbsp;Dictionary&nbsp;object&nbsp;containing&nbsp;items&nbsp;to&nbsp;compare&nbsp;for&nbsp;validation<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;if&nbsp;value&nbsp;passes&nbsp;validation&nbsp;|&nbsp;False&nbsp;--&nbsp;if&nbsp;value&nbsp;fail&nbsp;validation</span></dd></dl>
+</td></tr></table>
+</body></html>

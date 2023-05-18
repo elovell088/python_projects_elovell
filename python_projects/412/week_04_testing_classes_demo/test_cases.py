@@ -1,0 +1,25 @@
+#IT 412 - Eric Lovell - Test Cases Example
+
+from classes.pizza import Pizza
+
+pizza_done = False
+my_pizza = Pizza("Eric's Pizza")
+
+while not pizza_done:
+    done_answer = input("Are you done with your pizza? (Y/N): ")
+    if done_answer.lower() == "n":
+        pizza_action = input("Do you want to add or remove a pizza topping? (A/R): ")
+        if pizza_action.lower() == "a":
+            pizza_topping = input("Please tell me what topping you would like to add: ")
+            my_pizza.addTopping(pizza_topping)
+        
+        else:
+            pizza_topping = input("Please tell me what topping you would like to remove: ")
+            my_pizza.removeTopping(pizza_topping)
+    
+    else:
+        pizza_done = True
+
+print("Here are the toppings on the pizza: ")
+print(my_pizza.toppings)
+

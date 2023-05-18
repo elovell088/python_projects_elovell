@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module setup</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">setup</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Ceric%20lovell%5Cdocuments%5Cit412_elovell%5Cit412_elo088%5Cfinal_project%5Cclasses%5Csetup.py">c:\users\eric lovell\documents\it412_elovell\it412_elo088\final_project\classes\setup.py</a></td></tr></table>
+    <p><span class="code">#IT&nbsp;412&nbsp;-&nbsp;Eric&nbsp;Lovell&nbsp;-&nbsp;Final&nbsp;Project&nbsp;Program&nbsp;<a href="#Setup">Setup</a>&nbsp;Class</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="json.html">json</a><br>
+</td><td class="multicolumn"><a href="os.html">os</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="setup.html#Setup">Setup</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Setup">class <strong>Setup</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Class&nbsp;that&nbsp;holds&nbsp;methods&nbsp;to&nbsp;setup&nbsp;program&nbsp;on&nbsp;launch<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Setup-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Constructor&nbsp;for&nbsp;the&nbsp;<a href="#Setup">Setup</a>&nbsp;Class</span></dd></dl>
+
+<dl><dt><a name="Setup-check_crm_data"><strong>check_crm_data</strong></a>(self)</dt><dd><span class="code">Method&nbsp;that&nbsp;checks&nbsp;the&nbsp;CRM&nbsp;Database&nbsp;to&nbsp;see&nbsp;if&nbsp;data&nbsp;exists<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Select&nbsp;query&nbsp;within&nbsp;method&nbsp;collects&nbsp;necessary&nbsp;information<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;If&nbsp;data&nbsp;exists&nbsp;|&nbsp;False&nbsp;--&nbsp;If&nbsp;data&nbsp;does&nbsp;not&nbsp;exist</span></dd></dl>
+
+<dl><dt><a name="Setup-check_mailing_data"><strong>check_mailing_data</strong></a>(self)</dt><dd><span class="code">Method&nbsp;that&nbsp;checks&nbsp;the&nbsp;Mailings&nbsp;Database&nbsp;to&nbsp;see&nbsp;if&nbsp;data&nbsp;exists<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Select&nbsp;query&nbsp;within&nbsp;method&nbsp;collects&nbsp;necessary&nbsp;information<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;--&nbsp;If&nbsp;data&nbsp;exists&nbsp;|&nbsp;False&nbsp;--&nbsp;If&nbsp;data&nbsp;does&nbsp;not&nbsp;exist</span></dd></dl>
+
+<dl><dt><a name="Setup-clearScreen"><strong>clearScreen</strong></a>(self)</dt><dd><span class="code">Method&nbsp;that&nbsp;clears&nbsp;the&nbsp;screen&nbsp;for&nbsp;easir&nbsp;visibility<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Clears&nbsp;screen&nbsp;with&nbsp;new&nbsp;line&nbsp;values<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Clears&nbsp;screen&nbsp;with&nbsp;new&nbsp;line&nbsp;values</span></dd></dl>
+
+<dl><dt><a name="Setup-generate_crm_id"><strong>generate_crm_id</strong></a>(self)</dt><dd><span class="code">Method&nbsp;that&nbsp;generates&nbsp;new&nbsp;CRM&nbsp;ID's&nbsp;based&nbsp;off&nbsp;database&nbsp;values<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Information&nbsp;is&nbsp;collected&nbsp;with&nbsp;a&nbsp;select&nbsp;query<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;new_id&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;new&nbsp;crm&nbsp;ID</span></dd></dl>
+
+<dl><dt><a name="Setup-generate_mail_id"><strong>generate_mail_id</strong></a>(self)</dt><dd><span class="code">Method&nbsp;that&nbsp;generates&nbsp;new&nbsp;Mail&nbsp;ID's&nbsp;based&nbsp;off&nbsp;database&nbsp;values<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Information&nbsp;is&nbsp;collected&nbsp;with&nbsp;a&nbsp;select&nbsp;query<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;new_id&nbsp;{String&nbsp;Value}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;new&nbsp;Mail&nbsp;ID</span></dd></dl>
+
+<dl><dt><a name="Setup-load_data"><strong>load_data</strong></a>(self, passed_file)</dt><dd><span class="code">Function&nbsp;that&nbsp;loads&nbsp;the&nbsp;contents&nbsp;of&nbsp;a&nbsp;file<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_file&nbsp;{File&nbsp;Path}&nbsp;--&nbsp;String&nbsp;value&nbsp;that&nbsp;contains&nbsp;path&nbsp;to&nbsp;the&nbsp;file&nbsp;for&nbsp;loading<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config_data&nbsp;{Dictionary&nbsp;Item}&nbsp;--&nbsp;Dictionary&nbsp;<a href="builtins.html#object">object</a>&nbsp;containing&nbsp;configurations&nbsp;loaded&nbsp;from&nbsp;JSON&nbsp;file<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;If&nbsp;file&nbsp;doesn't&nbsp;exist,&nbsp;it&nbsp;is&nbsp;caught&nbsp;in&nbsp;'except'&nbsp;and&nbsp;prints&nbsp;message&nbsp;stating&nbsp;it&nbsp;doesn't&nbsp;exist</span></dd></dl>
+
+<dl><dt><a name="Setup-programPrompts"><strong>programPrompts</strong></a>(self)</dt><dd><span class="code">Displays&nbsp;available&nbsp;prompts&nbsp;for&nbsp;user<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Directly&nbsp;prints&nbsp;program&nbsp;prompts&nbsp;to&nbsp;the&nbsp;console</span></dd></dl>
+
+<dl><dt><a name="Setup-reset_configs"><strong>reset_configs</strong></a>(self)</dt><dd><span class="code">Method&nbsp;that&nbsp;resets&nbsp;config&nbsp;values&nbsp;in&nbsp;setup_config.json&nbsp;back&nbsp;to&nbsp;starting&nbsp;values<br>
+Arguments:&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Information&nbsp;is&nbsp;collecting&nbsp;by&nbsp;loading&nbsp;data&nbsp;within&nbsp;setup_config.json&nbsp;file<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Resets&nbsp;new&nbsp;configurations&nbsp;to&nbsp;the&nbsp;setup_config.json&nbsp;file</span></dd></dl>
+
+<dl><dt><a name="Setup-save_data"><strong>save_data</strong></a>(self, new_data, new_file, silent='n')</dt><dd><span class="code">Function&nbsp;that&nbsp;saves&nbsp;the&nbsp;newest&nbsp;JSON&nbsp;configurations&nbsp;to&nbsp;setup_files.json&nbsp;&nbsp;&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;new_data&nbsp;{Dictionary&nbsp;Item}&nbsp;--&nbsp;Dictionary&nbsp;<a href="builtins.html#object">object</a>&nbsp;containing&nbsp;configurations&nbsp;from&nbsp;JSON&nbsp;file<br>
+&nbsp;&nbsp;&nbsp;&nbsp;new_file&nbsp;{File&nbsp;Path}&nbsp;--&nbsp;String&nbsp;value&nbsp;containing&nbsp;path&nbsp;to&nbsp;backup_file&nbsp;location<br>
+&nbsp;&nbsp;&nbsp;&nbsp;silent&nbsp;{Optional&nbsp;Value}&nbsp;--&nbsp;If&nbsp;'n':&nbsp;message&nbsp;is&nbsp;printed&nbsp;|&nbsp;If&nbsp;'y':&nbsp;message&nbsp;NOT&nbsp;printed<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Overwrites&nbsp;contents&nbsp;within&nbsp;new_file,&nbsp;saves&nbsp;file,&nbsp;and&nbsp;prints&nbsp;message&nbsp;that&nbsp;configurations&nbsp;were&nbsp;saved</span></dd></dl>
+
+<dl><dt><a name="Setup-sync_database"><strong>sync_database</strong></a>(self)</dt><dd><span class="code">Method&nbsp;that&nbsp;accesses&nbsp;database&nbsp;and&nbsp;pulls&nbsp;the&nbsp;last&nbsp;crm&nbsp;and&nbsp;mail&nbsp;id&nbsp;used.&nbsp;Saves&nbsp;local&nbsp;json&nbsp;file&nbsp;for&nbsp;other&nbsp;classes/methods&nbsp;to&nbsp;access<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Calls&nbsp;other&nbsp;methods&nbsp;within&nbsp;class&nbsp;for&nbsp;information&nbsp;gathering<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Syncs&nbsp;database&nbsp;values&nbsp;with&nbsp;values&nbsp;within&nbsp;the&nbsp;setup_config.json&nbsp;file</span></dd></dl>
+
+<dl><dt><a name="Setup-updateCustomers"><strong>updateCustomers</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Setup-update_configs"><strong>update_configs</strong></a>(self)</dt><dd><span class="code">Method&nbsp;that&nbsp;updates&nbsp;config&nbsp;values&nbsp;in&nbsp;setup_config.json<br>
+Arguments:&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Information&nbsp;is&nbsp;collecting&nbsp;by&nbsp;loading&nbsp;data&nbsp;within&nbsp;setup_config.json&nbsp;file<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;--&nbsp;Saves&nbsp;new&nbsp;configurations&nbsp;to&nbsp;the&nbsp;setup_config.json&nbsp;file</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>connect_to_database</strong> = &lt;classes.database_access.DB_Connect object&gt;</td></tr></table>
+</body></html>

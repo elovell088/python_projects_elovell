@@ -1,0 +1,1 @@
+{"safe mode": "On", "memory": "32MB", "error log": "logs/errors.log", "allow file uploads": "Yes", "use caching": "Yes", "caching file": "cache/filecache.cache", "mail host": "mail.apphost.com"}
