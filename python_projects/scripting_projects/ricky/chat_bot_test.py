@@ -13,15 +13,14 @@ url = "https://www.macomb.edu/"
 browser = webdriver.Chrome()
 browser.get(url)
 
-time.sleep(1)
-
-file_path = 'index.html'
+time.sleep(5)
+file_path = 'C:/Users/Eric Lovell/Documents/Python Projects/python_projects_elovell/python_projects/scripting_projects/ricky/index.html'
  # Path to your Chrome executable
 
 # Open the HTML file in Chrome
-webbrowser.open(file_path)
+webbrowser.open(file_path, new=2)
 
-time.sleep(5)
+
 
 """
 # Find the message box by class name
