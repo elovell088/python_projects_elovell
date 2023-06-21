@@ -9,6 +9,7 @@ def parse_log_entry(log_entry):
     Returns: 
         None - If no pattern is found | Source/Destination/Protocol Information"""
     
+    #Regex for ip info
     pattern = r'(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}).*SRC=(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).*DST=(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).*PROTO=(\w+).*'
     match = re.match(pattern, log_entry)
     if match:
